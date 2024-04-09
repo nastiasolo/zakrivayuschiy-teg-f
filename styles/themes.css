@@ -4,3 +4,43 @@
 ✦ theme-light — класс светлой темы
 ✦ не забудьте описать стили для изменения темы через медизапрос пользовательских предпочтений
 */
+:root.theme-light {
+  --main-text-weight: 400;
+  --heading-weight: 700;
+  --bg-color: #fff;
+  --accent-color: #000;
+  --bg-image: repeating-linear-gradient(#d3d3d3 0px 2px, transparent 2px 4px),
+    repeating-linear-gradient(90deg, #d3d3d3 0px 2px, transparent 2px 4px),
+    linear-gradient(#e7e7e7 0.01%, #1a1a1a);
+  --text-shadow-color: #fff;
+  --sparks-color: #ff0000;
+  --button-text-color: #fff;
+}
+
+:root.theme-dark {
+  --main-text-weight: 465;
+  --heading-weight: 785;
+  --bg-color: #000;
+  --accent-color: #00cc14;
+  --bg-image: repeating-linear-gradient(#000 0px 2px, transparent 2px 4px),
+    repeating-linear-gradient(90deg, #000 0px 2px, transparent 2px 4px),
+    linear-gradient(#007f0c, #004306);
+  --text-shadow-color: #000;
+  --sparks-color: #ff0000;
+  --button-text-color: #00cc14;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --main-text-weight: 465;
+    --heading-weight: 785;
+    --bg-color: #000;
+    --accent-color: #00cc14;
+    --bg-image: repeating-linear-gradient(#000 0px 2px, transparent 2px 4px),
+      repeating-linear-gradient(90deg, #000 0px 2px, transparent 2px 4px),
+      linear-gradient(#007f0c, #004306);
+    --text-shadow-color: #000;
+    --sparks-color: #ff0000;
+    --button-text-color: #00cc14;
+  }
+}
