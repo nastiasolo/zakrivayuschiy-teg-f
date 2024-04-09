@@ -121,13 +121,13 @@
 
 .content {
   gap: 50px;
-  background-color: transparent;
   border: none;
+  background-color: transparent;
 }
 
 .content__card {
-  background-color: var(--bg-color);
   border: 2px solid var(--accent-color);
+  background-color: var(--bg-color);
 }
 
 .content__card-title {
@@ -142,10 +142,10 @@
 .content__card-image {
   border-top: 2px solid var(--accent-color);
   border-bottom: 2px solid var(--accent-color);
-  inline-size: 100%;
-  block-size: 100%;
   object-fit: cover;
   object-position: center;
+  inline-size: 100%;
+  block-size: 100%;
 }
 
 .html-img-1 {
@@ -372,9 +372,9 @@
 }
 
 .dialog__description-icon {
+  flex-shrink: 0;
   width: 39px;
   height: 39px;
-  flex-shrink: 0;
 }
 
 .dialog__ok-button {
