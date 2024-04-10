@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Закрывающий тег</title>
     <link rel="icon" href="./svg/favicon.svg" type="image/svg+xml" />
-    <link rel="icon" href="./images/favicon.ico" size="any" />
+    <link rel="icon" href="./images/favicon.ico" sizes="any" />
     <link rel="stylesheet" href="./fonts/fonts.css" />
     <link rel="stylesheet" href="./styles/variables.css" />
     <link rel="stylesheet" href="./styles/globals.css" />
@@ -54,6 +54,7 @@
           <img
             class="content__card-image html-img-1"
             src="./images/puzzle-start.jpg"
+            alt="Несобранный пазл"
           />
           <p class="content__card-label">&lt;/HTML&gt;</p>
         </div>
@@ -113,6 +114,7 @@
           <img
             class="content__card-image html-img-2"
             src="./images/puzzle-process.jpg"
+            alt="Пазл в процессе сборки"
           />
           <p class="content__card-label">&lt;/HTML&gt;</p>
         </div>
@@ -172,7 +174,11 @@
       <article class="content__card">
         <h3 class="content__card-title">1 спринт: А если не получится?</h3>
         <div class="content__card-block">
-          <img class="content__card-image css-img" src="./images/coffee.jpg" />
+          <img
+            class="content__card-image css-img"
+            src="./images/coffee.jpg"
+            alt="Чашка кофе и тортик"
+          />
           <p class="content__card-label">&lt;css&gt;</p>
         </div>
         <div class="content__text-block">
@@ -230,6 +236,7 @@
           <img
             class="content__card-image desigions-img"
             src="./images/museum.jpg"
+            alt="Картина с белым котом в музее"
           />
           <p class="content__card-label">&lt;desigions&gt;</p>
         </div>
@@ -290,7 +297,11 @@
       <article class="content__card">
         <h3 class="content__card-title">2 спринт: О тех, кто рядом</h3>
         <div class="content__card-block">
-          <img class="content__card-image care-img" src="./images/horses.jpg" />
+          <img
+            class="content__card-image care-img"
+            src="./images/horses.jpg"
+            alt="Два коня"
+          />
           <p class="content__card-label">care</p>
         </div>
         <div class="content__text-block">
@@ -352,6 +363,7 @@
           <img
             class="content__card-image support-img"
             src="./images/flowers.jpg"
+            alt="Цветы на улице в весенний солнечный день"
           />
           <p class="content__card-label">&lt;support&gt;</p>
         </div>
@@ -410,6 +422,7 @@
           <img
             class="content__card-image life-img"
             src="./images/painting.jpg"
+            alt="Яркая картина на мольберте"
           />
           <p class="content__card-label">&lt;lifes-style: none;&gt;</p>
         </div>
@@ -471,6 +484,7 @@
           <img
             class="content__card-image experience-img"
             src="./images/home.jpg"
+            alt="Домашний интерьер, чашка и тортик на столе"
           />
           <p class="content__card-label">&lt;experience&gt;</p>
         </div>
@@ -542,7 +556,6 @@
         <span class="button__text">Сохранить на память</span>
       </button>
     </main>
-
     <script src="./scripts/like.js"></script>
   </body>
   <dialog id="dialog-id" class="dialog">
@@ -556,12 +569,14 @@
       </svg>
       <p class="dialog__description-text">Вставьте дискету, чтобы продолжить</p>
     </div>
-    <button
-      type="button"
-      onclick="window['dialog-id'].close()"
-      class="dialog__ok-button decorated-button"
-    >
-      <span class="button__text"> OK</span>
-    </button>
+    <form method="dialog">
+      <button
+        type="button"
+        onclick="window['dialog-id'].close()"
+        class="dialog__ok-button decorated-button"
+      >
+        <span class="button__text"> OK</span>
+      </button>
+    </form>
   </dialog>
 </html>

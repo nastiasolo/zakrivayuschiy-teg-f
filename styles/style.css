@@ -26,6 +26,7 @@
   background-image: var(--bg-image);
   background-size: cover;
   background-attachment: fixed;
+  font-variation-settings: "wdth" var(--main-text-weight);
   min-inline-size: 320px;
   min-block-size: 100dvb;
 }
@@ -50,11 +51,13 @@
 
 .header__logo-title {
   margin-bottom: 20px;
+  font-weight: 400;
   font-size: clamp(3.0625rem, 2.7104rem + 1.5023vw, 4.0625rem);
 }
 
 .header__main-title {
   margin-bottom: 25px;
+  font-weight: 400;
   font-size: clamp(0.875rem, 0.6769rem + 0.8451vw, 1.4375rem);
   white-space: nowrap;
 }
@@ -132,6 +135,8 @@
 
 .content__card-title {
   margin: 3px 10px;
+  font-size: 18px;
+  font-variation-settings: "wdth" var(--heading-weight);
 }
 
 .content__card-block {
