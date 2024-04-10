@@ -26,7 +26,7 @@
   background-image: var(--bg-image);
   background-size: cover;
   background-attachment: fixed;
-  font-variation-settings: "wdth" var(--main-text-weight);
+  font-variation-settings: "wght" var(--main-text-weight);
   min-inline-size: 320px;
   min-block-size: 100dvb;
 }
@@ -44,7 +44,7 @@
 
 .header {
   margin-block: 100px;
-  padding: 136px 120.5px 25px;
+  padding: 136px 120.5px 11px;
   font-family: var(--accent-font), fantasy;
   text-transform: uppercase;
 }
@@ -64,6 +64,8 @@
 
 .theme-menu__item {
   margin-bottom: 14px;
+  font-size: 14px;
+  line-height: 14px;
 }
 
 .theme-menu__button {
@@ -332,7 +334,7 @@
 }
 
 .card__like-button {
-  padding: 9px 17px;
+  padding: 10px 36px;
 }
 
 .content__save-button {
@@ -341,7 +343,7 @@
   align-items: center;
   gap: 8px;
   margin-block-end: 103px;
-  padding: 21px 18.5px;
+  padding: 15px 19px;
 }
 
 .content__save-button-icon {
