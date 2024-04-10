@@ -12,3 +12,44 @@
 
 Кроме этого, не меняйте HTML переключателя тем. Его разметка также гарантирует работу своего скрипта.
 */
+
+.like-icon .core {
+  transition: fill 0.3s 0.03s;
+}
+
+.like-icon:active .core {
+  fill: var(--sparks-color);
+}
+
+.like-icon .main-body {
+  transition: fill 0.3s- 0.05s;
+}
+
+.like-icon:active .main-body {
+  fill: var(--sparks-color);
+}
+
+.like-icon.is-liked .core {
+  fill: var(--sparks-color);
+  transition: fill 0.3s 0.03s;
+}
+
+.like-icon.is-liked .main-body {
+  fill: var(--sparks-color);
+  transition: fill 0.3s 0.05s;
+}
+
+.like-icon.is-liked .contour {
+  fill: var(--sparks-color);
+  transition: fill 0.3s 0.06s;
+}
+
+.like-icon.is-liked .heart {
+  transform-origin: center;
+  animation: bigheart 0.3s 0.1s ease-in;
+}
+
+.like-icon.is-liked .sparks {
+  transform-origin: center;
+  animation: heartsparks 0.3s 0.3s ease-in;
+}
