@@ -557,26 +557,28 @@
       </button>
     </main>
     <script src="./scripts/like.js"></script>
+    <dialog id="dialog-id" class="dialog">
+      <div class="dialog__description">
+        <svg
+          class="dialog__description-icon"
+          xmlns="http://www.w3.org/2000/svg"
+          viewBox="0 0 39 39"
+        >
+          <use href="svg/floppy.svg#floppy"></use>
+        </svg>
+        <p class="dialog__description-text">
+          Вставьте дискету, чтобы продолжить
+        </p>
+      </div>
+      <form method="dialog">
+        <button
+          type="button"
+          onclick="window['dialog-id'].close()"
+          class="dialog__ok-button decorated-button"
+        >
+          <span class="button__text"> OK</span>
+        </button>
+      </form>
+    </dialog>
   </body>
-  <dialog id="dialog-id" class="dialog">
-    <div class="dialog__description">
-      <svg
-        class="dialog__description-icon"
-        xmlns="http://www.w3.org/2000/svg"
-        viewBox="0 0 39 39"
-      >
-        <use href="svg/floppy.svg#floppy"></use>
-      </svg>
-      <p class="dialog__description-text">Вставьте дискету, чтобы продолжить</p>
-    </div>
-    <form method="dialog">
-      <button
-        type="button"
-        onclick="window['dialog-id'].close()"
-        class="dialog__ok-button decorated-button"
-      >
-        <span class="button__text"> OK</span>
-      </button>
-    </form>
-  </dialog>
 </html>

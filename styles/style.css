@@ -31,6 +31,12 @@
   min-block-size: 100dvb;
 }
 
+@supports (font-variation-settings: normal) {
+  .page {
+    font-family: "Inter-Variable", sans-serif;
+  }
+}
+
 .header,
 .content {
   display: flex;
